@@ -185,6 +185,7 @@ h1{
     height: 768px;
     overflow: hidden;
     pointer-events: none;
+    margin: auto;
 }
 
 .home .profession-container .profession-box{
@@ -629,7 +630,10 @@ span{
         margin-bottom: .1rem;
     }
     .home-content{
-        margin-top: 10%;
+        margin-top: -10%;
+    }
+    .logo{
+        margin-left: 20px;
     }
     .navbar {
         position: absolute;
@@ -682,7 +686,7 @@ span{
     }
     .home .profession-container .profession-box {
         position: fixed;
-        top: 60%;
+        top:50%;
         left: 0;
         border-radius: 0;
         width: 100%;
@@ -719,11 +723,13 @@ span{
     }
     .home .profession-container .overlay{
         position: fixed;
-        top: 58rem;
+        width: 100%;
+        top: 75rem;
         left: 50%;
         right: 0;
         transform:  rotate(90deg) translate(-50%, 50%) scaleY(3);
         border-radius: 23.9rem;
+        overflow-x: hidden;
     }
     .about{
         flex-direction: column-reverse;
@@ -773,6 +779,12 @@ span{
     .home{
         padding: 0 3% 30rem;
     }
+    .home .profession-container .profession-box {
+        top:65%;
+    }
+    .home .profession-container .overlay{
+        top:80%;
+    }
     .home .profession-box .profession:nth-child(1) {
         transform: rotate(-90deg) translate(-110px, -220px);
     }
@@ -792,7 +804,11 @@ span{
 
 @media (max-width:365px) {
     .home-content{
-        margin-top: 15%;
+        margin-top: 5%;
+    }
+    .home .profession-container .profession-box {
+        top:67%;
+        right: 0;
     }
     .about-img img{
         width: 60vw;
